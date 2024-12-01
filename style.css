@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+:root{
+    --bg: #151515 ;
+    --primary: #4ee1a0;
+    --gray: #242424;
+    --white-gray: #d9d9d9;
+    --white: #ffffff;
+}
+
+
+body{
+    background-color: var(--bg);
+    color: var(--white);
+    width: 1440px;
+    margin: auto;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+nav .right {
+    text-align: right;
+}
+.left .logo{
+    font-size: 28px;
+    font-weight: 600;
+}
+header {
+    width: 1110px;
+    margin: auto;
+    position: relative;
+}
+
+nav i{
+    padding: 0 10px;
+    font-size: 25px;
+    transition: .3s;
+}
+
+nav i:hover {
+    color: var(--primary);
+    
+}
+
+header .hero {
+    height: 760px;
+}
+
+header .hero .adamKeys{
+   position: absolute;
+   right: 0;
+   top: 0;
+   z-index: -1;
+   width: 445px;
+}
+
+header .hero .title{
+    padding: 70px 0;
+    font-weight: 700;
+    font-size: 88px;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -3px;
+    
+}
+
+header .hero .title span {
+    text-decoration: underline;
+    text-decoration-color: #4ee1a0;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 14px;
+}
+
+header .hero .left p{
+    padding: 40px 0;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.cta-btn a{
+    text-decoration: none;
+    letter-spacing: 2.29px;
+    color: var(--white);
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--primary);
+    transition: 0.3s;
+    
+    
+}
+
+footer .cta-btn {
+    text-align: right;
+    
+}
+.cta-btn {
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.cta-btn a:hover{
+    color: var(--primary);
+}
+
+header .hero .Group26{
+    position: absolute;
+    height: 129px;
+    left: -170px;
+}
+
+
+
+header .hero .round-circle{
+    height: 129px;
+    width: 129px;
+
+    position: absolute;
+    top: 521px;
+    left: 600px;
+    border-radius: 50%;
+    border: 2px dotted var(--white);
+}
+
+
+
+
+
+main{
+    width: 1110px;
+    margin: auto;
+}
+
+main .soft-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px 0;
+    row-gap: 40px;
+}
+
+main .soft-skills .card {
+    width: 345px;
+
+}
+
+main .soft-skills .card h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+main .soft-skills .card p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 0;
+}
+
+.projects .title {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 60px 0;
+    align-items: center;
+}
+
+
+.projects .title h1{
+    font-size: 88px;
+}
+
+main .project-showcase .case {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 60px;
+
+}
+
+main .project-showcase .case .card{
+    width: 540px;
+    
+
+}
+
+main .project-showcase .case .card img{
+    width: 100%;
+    transition: .3s;
+}
+
+main .project-showcase .case .card h3{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+main .project-showcase .case .card span{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-image {
+    position: relative;
+}
+
+.hover{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+    transition: .3s;
+    text-align: center;
+}
+main .project-showcase .case .card-image:hover {
+    img{
+        opacity: 40%;
+    }
+    .hover{
+        display: block;
+        
+    }
+}
+
+
+footer {
+    width: 1110px;
+    margin: 40px auto;
+    
+}
+
+footer .contact{
+    display: flex;
+    padding: 40px 0 50px 0;
+    
+}
+
+footer .left{
+    width: 55%;
+    position: relative;i
+
+}
+footer .left h1 {
+    font-size: 88px;
+}
+
+footer .left p{
+    height: 84px;
+    width: 445px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top:36px;
+}
+
+footer .Group26{
+    position: absolute;
+    height: 129px;
+    left: -170px;
+    top: 307px;
+}
+
+footer .right {
+    width: 45%;
+}
+
+footer .right input{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: var(--white-gray);
+    border: none;
+    border-bottom: 2px solid var(--white-gray);
+    font-size: 18px;
+}
+
+footer .right textarea {
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+    background-color: transparent;
+    color: var(--white-gray);
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid var(--white-gray);
+}
+
+
+
